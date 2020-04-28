@@ -1,0 +1,120 @@
+.body{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "a a a a"
+    "c c d d"
+    "b b d d"
+    "b b d d";
+    margin: auto 0;
+    
+    
+}
+
+.item{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.a{
+    grid-area: a;
+    background-color: rgb(68, 68, 68);
+}
+.b{
+    grid-area: b;
+    background-color: rgb(73, 73, 73);
+    flex-direction: column;
+    
+    
+}
+.c{
+    grid-area: c;
+    background-color: rgb(48, 48, 48);
+}
+.d{
+    grid-area: d;
+    background-color: rgb(54, 54, 54);
+    flex-direction: column;
+}
+
+.h1{
+    transition: 0.3s;
+}
+
+.h1::selection{
+
+    background-color: lightgreen;
+    
+}
+
+.text:required{
+
+    border: 3px solid lightgreen;
+
+}
+
+.checkbox:checked{
+    margin: 10px;
+}
+
+.h1:hover{
+    color: lightgreen;
+    font-size: 40px;
+}
+
+
+.tabelka:last-of-type{
+    font-size: 30px;
+}
+
+.br:empty{
+line-height: 4rem;
+}
+
+.p::first-line{
+    color: lightgreen;
+}
+
+.p::first-letter{
+    font-size: 30px;
+}
+
+.p::after{
+    content: "💚";
+}
+
+.link{
+    color: black;
+    font-size: 40px;
+    text-decoration:none;
+    border: 2px solid lightgreen;
+    padding: 5px;
+    
+}
+
+.link:active{
+    color: lightgreen;
+    
+}
+
+
+
+.b p:nth-child(2n+0){
+    color: rgb(88, 185, 88);
+}
+
+.t::before{
+    content: "💚";
+}
+
+.tabelka{
+    list-style: none;
+}
+
+
+
